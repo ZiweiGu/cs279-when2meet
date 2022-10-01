@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS 279 When2meet </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+  <style>
+    #drag {
+      max-height: max-content;
+    }
+
+  </style>
+</head>
+<body>
+  <div style="margin-top: 100px; max-width: 100%;" class="ui container">
+    <h1 class="ui center aligned header">when2meet for CS 279</h1>
+    <form action="/add" method="post"> 
+      <select id="drag" multiple="">
+        <option value="availability_1">1 - 2 pm, Friday, Oct. 21</option>
+        <option value="availability_2">2 - 3 pm, Friday, Oct. 21</option>
+        <option value="availability_3">3 - 4 pm, Friday, Oct. 21</option>
+        <option value="availability_4">4 - 5 pm, Friday, Oct. 21</option>
+        <option value="availability_5">5 - 6 pm, Friday, Oct. 21</option>
+      </select>
+
+  <br>
+    <button type="submit">Submit my preferences</button>
+  </form> 
+  </div>
+
+
+<script>
+
+var drag = document.getElementById("drag");
+
+drag.onclick = function(e){
+  e.preventDefault();
+}
+</script>
+  
+</body>
+</html>
