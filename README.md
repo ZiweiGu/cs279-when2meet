@@ -5,7 +5,11 @@ A when2meet-like scheduler app built with React. The code was adapted from an ex
 git clone https://github.com/ZiweiGu/cs279-when2meet.git
 cd cs279-when2meet
 ```
-Then, run the following and follow instructions in the terminal:
+Then, install the required dependencies by typing:
+```
+npm install
+```
+Then run the following to start the development server:
 ```
 npm start
 ```
